@@ -1,0 +1,47 @@
+export const projects = [
+  {
+    title: "Git Commit Analyzer",
+    description: "A tool that fetches and visualizes Git commit data using React and Spring Boot.",
+    tech: ["React", "Spring Boot", "PostgreSQL"],
+    github: "https://github.com/yourname/git-commit-analyzer",
+    demo: "https://git-analyzer.okoyo.dev",
+    image: "https://www.okoyo.dev/images/file.png",
+  },
+  {
+    title: "MT ↔ MX Converter",
+    description: "Node.js service for converting financial messages between SWIFT MT and ISO 20022 MX formats.",
+    tech: ["Node.js", "Express", "xmlbuilder2"],
+    github: "https://github.com/yourname/mt-mx-converter",
+    image: "https://www.okoyo.dev/images/api.png",
+  },
+  {
+    title: "Git Commit Analyzer",
+    description: "A tool that fetches and visualizes Git commit data using React and Spring Boot.",
+    tech: ["React", "Spring Boot", "PostgreSQL"],
+    github: "https://github.com/yourname/git-commit-analyzer",
+    demo: "https://git-analyzer.okoyo.dev",
+    image: "https://www.okoyo.dev/images/file.png",
+  },
+  {
+    title: "MT ↔ MX Converter",
+    description: "Node.js service for converting financial messages between SWIFT MT and ISO 20022 MX formats.",
+    tech: ["Node.js", "Express", "xmlbuilder2"],
+    github: "https://github.com/yourname/mt-mx-converter",
+    image: "https://www.okoyo.dev/images/api.png",
+  },
+  {
+    title: "Git Commit Analyzer",
+    description: "A tool that fetches and visualizes Git commit data using React and Spring Boot.",
+    tech: ["React", "Spring Boot", "PostgreSQL"],
+    github: "https://github.com/yourname/git-commit-analyzer",
+    demo: "https://git-analyzer.okoyo.dev",
+    image: "https://www.okoyo.dev/images/file.png",
+  },
+  {
+    title: "MT ↔ MX Converter",
+    description: "Node.js service for converting financial messages between SWIFT MT and ISO 20022 MX formats.",
+    tech: ["Node.js", "Express", "xmlbuilder2"],
+    github: "https://github.com/yourname/mt-mx-converter",
+    image: "https://www.okoyo.dev/images/api.png",
+  },
+];
