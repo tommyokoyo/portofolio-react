@@ -20,6 +20,7 @@ export const aboutData = {
     'NodeJS',
     'ExpressJs',
     'Flask',
+    'react',
   ],
 
   Database: ['MS SQL', 'Mongo', 'Postgres', 'MySQL'],
@@ -60,22 +61,22 @@ export const aboutData = {
 
   experience: [
     {
-      role: 'Full Stack Developer – Freelance',
-      period: '2022 - Present',
-      description: 'Worked with startups to build web applications using React, Node.js, and MongoDB.',
+      role: 'Information Security Analyst  – Eclectics International Ltd',
+      period: '2024 - Present',
+      description: 'Simulated threat scenarios for financial applications and developed Frida scripts to test app behavior and tamper detection. Led developer training on secure coding, OWASP Top 10 awareness, and mitigating critical vulnerabilities. Performed code reviews and integrated static and dynamic analysis tools into CI/CD pipelines across multiple fintech projects. Provide clients with actionable advice on hardening their internet-facing services and mitigating risk exposure to cloud deployments.',
     },
     
     {
-      role: 'Software Developer – [Your Last Company]',
-      period: '2020 - 2022',
-      description: 'Built internal tools, dashboards, and customer-facing features in an agile team.',
+      role: 'Junior Information Security Analyst  – Eclectics International Ltd',
+      period: '2022 - 2023',
+      description: 'Conducted code scan, conduct vulnerability assessment on the applications developed, scan and analyze the network traffic for rouge access points, conduct awareness campaigns in the company with regards to online safety, evaluate emerging security trends for potential adoption.',
     },
   ],
 
   education: {
-    degree: 'BSc. in Computer Science',
-    school: '[Your University]',
-    period: '2016 - 2020',
+    degree: 'BSc. Computer Science',
+    school: 'Pwani Univesity',
+    period: '2016 - 2021',
   },
 
   techStack: ['React', 'Node.js', 'Tailwind', 'TypeScript', 'Java', 'SpringBoot', 'Python', 'Python Flask', 'MsSQL', 'MySQL', 'PostgreSQL'],
