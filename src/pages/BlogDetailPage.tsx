@@ -1,8 +1,7 @@
-import { Navigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ToggleTheme from "../components/ToggleTheme";
 import Footer from "../components/Footer";
 import PageWrapper from "../components/PageWrapper";

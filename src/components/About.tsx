@@ -1,5 +1,5 @@
-import { aboutData } from "../content/aboutData";
-import { skillsData } from "../content/skillsData";
+import { aboutData } from "../../content/aboutData";
+import { skillsData } from "../../content/skillsData";
 
 const About = () => {
     return (

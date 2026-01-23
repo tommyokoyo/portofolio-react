@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { children, ReactNode } from "react";
+import { ReactNode } from "react";
 import { useLocation } from "react-router-dom";
 import { useTheme } from "../hooks/MyTheme";
 
@@ -9,19 +9,16 @@ const pagevariants = {
     exit: { opacity: 0 },
 };
 
-const PageTransition = {
-    duration: 0.4   ,
-    ease: "easeInOut"
-};
-
 interface PageWrapperProps {
     children: ReactNode;
 }
 
 const PageWrapper = ({ children }: PageWrapperProps) => {
-     const location = useLocation();
+    const location = useLocation();
     const { theme } = useTheme();
 
+    console.log("PageWrapper rendered with theme:", theme);
+    
     return (
         <motion.div
         key={`${location.pathname}-${theme}`}
@@ -29,8 +26,8 @@ const PageWrapper = ({ children }: PageWrapperProps) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={PageTransition}
-        className="min-h-screen bg-gray-100 dark:bg-gray-900"
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="min-h-screen "
         >
             {children}
         </motion.div>

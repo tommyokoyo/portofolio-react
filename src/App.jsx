@@ -1,11 +1,11 @@
-import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
-import BlogPage from './pages/BlogPage';
-import BlogDetailPage from './pages/BlogDetailPage';
-import ProjectsPage from './pages/ProjectsPage';
+import { ThemeProvider } from './hooks/MyTheme';
 
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import AboutMe from './pages/AboutMe';
+import BlogGrid from './pages/BlogGrid';
+import ProjectsGrid from './pages/ProjectsGrid';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -14,10 +14,9 @@ function AnimatedRoutes() {
       <AnimatePresence mode='wait'>
          <Routes location={location} key={location.pathname}>
           <Route path='/' element={<HomePage />}></Route>
-          <Route path='/about' element={<AboutPage />}></Route>
-          <Route path='/blog' element={<BlogPage />}></Route>
-          <Route path='/blog/:slug' element={<BlogDetailPage />}></Route>
-          <Route path='/projects' element={<ProjectsPage />}></Route>
+          <Route path='/about' element={<AboutMe />}></Route>
+          <Route path='/blog' element={<BlogGrid />}></Route>
+          <Route path='/projects' element={<ProjectsGrid />}></Route>
         </Routes>
       </AnimatePresence>
     );
@@ -25,9 +24,11 @@ function AnimatedRoutes() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <AnimatedRoutes />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+          <AnimatedRoutes />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

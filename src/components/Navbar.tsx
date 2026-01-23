@@ -15,10 +15,10 @@ const Navbar = () => {
                 <ul className="hidden md:flex space-x-10 pr-5 text-gray-800 dark:text-gray-300">
                     <li ><Link to="/" className="hover:text-blue-500 cursor-pointer">Home</Link></li>
                     <li ><Link to="/about" className="hover:text-blue-500 cursor-pointer">About</Link></li>
-                    <li ><Link to="/blog" className="hover:text-blue-500 cursor-pointer">Blog</Link></li>
+                    <li ><Link to="/blog" className="hover:text-blue-500 cursor-pointer">Blogs</Link></li>
                     <li ><Link to="/projects" className="hover:text-blue-500 cursor-pointer">Projects</Link></li>
                 </ul>
-                
+
                 <button className="md:hidden px-3 text-2xl text-gray-700 dark:text-white" onClick={toggleMobileMenu}>
                         ☰
                 </button>
