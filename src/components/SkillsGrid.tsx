@@ -4,39 +4,39 @@ import { useState } from "react";
 const skills = [
   {
     title: "Offensive Security",
-    subtitle: "Offensive Security",
+    subtitle: "Adversarial Thinking",
     size: "md",
-    items: ["Web Exploitation", "Red Teaming", "Exploit Development"]
+    items: ["Web Exploitation (Logical Flows)", "Auth & Access Control Testing", "Cloud Misconfiguration Abuse"]
   },
   {
-    title: "Cloud & Infra",
-    subtitle: "Cloud & Infra",
+    title: "Cloud & Infrastructure",
+    subtitle: "AWS & System Design",
     size: "md",
-    items: ["AWS", "IAM", "Network Segmentation"]
+    items: ["AWS Architecture", "IAM Design & Least Priviledge", "Network Segmentation", "Secure Backend Hosting"]
   },
   {
     title: "Blue Team",
-    subtitle: "Blue Team",
+    subtitle: "Detection Engineering",
     size: "md",
-    items: ["SIEM", "Threat Hunting", "Incident Response"]
+    items: ["Log Architecture", "Threat Modeling", "Incident Response Playbooks"]
   },
   {
-    title: "Malware & RE",
-    subtitle: "Malware & RE",
+    title: "System Architecture",
+    subtitle: "Design & Extensibility",
     size: "md",
-    items: ["Static Analysis", "Dynamic Analysis", "C2 Research"]
+    items: ["Core Entity Modelling", "Plugin Systems", "Scalable Backedn Design", "Domain Modelling"]
   },
   {
     title: "Web Security",
-    subtitle: "Web Security",
+    subtitle: "Application Layer",
     size: "md",
-    items: ["IDOR", "Auth Bypass", "API Abuse"]
+    items: ["Broken Access Control", "IDOR & Priviledge Escalation", "API Abuse & Rate Logic", "Session Security"]
   },
   {
     title: "DevSecOps",
-    subtitle: "DevSecOps",
+    subtitle: "Secure Delivery",
     size: "md",
-    items: ["CI/CD Security", "Secrets", "Container Hardening"]
+    items: ["CI/CD Hardening", "Secrets Managment", "Container Security", "Infrastructure as Code"]
   }
 ]
 
@@ -45,9 +45,9 @@ export default function SkillsGrid() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="max-w-5xl mx-auto px-7 py-20">
+    <section className="max-w-5xl mx-auto px-5 py-20">
       <h2 className="text-3xl font-bold text-white mb-12">Skills</h2>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-3">
+      <div className="p-2 grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5">
       {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-7 auto-rows-auto border border-white"> */}
         {skills.map((skill, index) => {
           const isOpen = open === index;
@@ -57,14 +57,14 @@ export default function SkillsGrid() {
           const mobileClasses = isOpen ? "opacity-0 -translate-y-4" : "";
 
           const frontClasses = canHover 
-            ? "group-hover:opacity-0 group-hover:translate-y-4" 
+            ? "group-hover:opacity-0 group-hover:-translate-y-4" 
             : mobileClasses;
 
           const backClasses = canHover
-                    ? "opacity-0 scale-95 -translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0"
+                    ? "opacity-0 translate-y-20 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0"
                     : isOpen
                     ? "opacity-100 scale-100 translate-y-0"
-                    : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                    : "opacity-0 scale-95 -translate-y-0 pointer-events-none"
           
           const cardSpan = skill.size === "xl" ? "md:col-span-3" : skill.size === "lg" ? "md:col-span-2" : "md-col-span-1"
 
@@ -76,17 +76,21 @@ export default function SkillsGrid() {
             >
               {/*front*/}
               <div
-                className={`transition-all duration-300 ${frontClasses}`}
+                className={`transition-all duration-400 ${frontClasses}`}
               >
                 <h3 className="text-cyan-400 font-semibold">{skill.title}</h3>
                 <p className="text-gray-400">{skill.subtitle}</p>
+
+                <ul className="space-y-0 opacity-0 translate-y-4 text-gray-300 text-sm">
+                    {skill.items.map(x => <li key={x}>• {x}</li>)}
+                </ul>
               </div>
 
               {/*back*/}
               <div
                 className={`
-                  absolute left-0 top-full mt-4 w-[120%]
-                  rounded-xl bg-gray-950 border border-cyan-500
+                  absolute left-0 top-0 w-[100%]
+                  rounded-xl bg-gray-950
                   shadow-2xl z-50
                   transition-all duration-300 origin-top
                   ${backClasses}

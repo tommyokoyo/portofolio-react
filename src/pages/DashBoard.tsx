@@ -3,6 +3,8 @@ import { Header } from "../components/Header";
 import { SideBar } from "../components/SideBar";
 import HomeScreen from "./HomeScreen";
 import { motion } from "framer-motion";
+import AboutPage from "./AboutPage";
+import { AboutScreen } from "./AboutScreen";
 
 interface SideBarProps {
     activeTab: string,
@@ -19,6 +21,8 @@ export const DashBoard = () => {
         switch (activeTab) {
             case "Home":
                 return <HomeScreen />
+            case "About":
+                return <AboutScreen />
             default:
                 return (
                     <motion.div
@@ -39,9 +43,9 @@ export const DashBoard = () => {
     return (
         <div className="min-h-screen flex">
             <SideBar activeTab={activeTab} setActiveTab={setActiveTab} sideBarOpen={sideBarOpen} setSideBarOpen={setSideBarOpen} />
-            <main className="flex-1 flex flex-col h-screen overflow-hidden relative">
+            <main className="flex-1 flex flex-col h-screen relative">
                 <Header activeTab={activeTab} setSideBarOpen={setSideBarOpen} setActiveTab={setActiveTab} />
-                <div className="flex-1 overflow-y-hidden">
+                <div className="flex-1 overflow-y-auto scrollbar-hide">
                     {renderContent()}
                 </div>
             </main>

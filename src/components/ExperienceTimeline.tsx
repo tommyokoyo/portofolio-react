@@ -1,36 +1,28 @@
 const experience = [
   {
-    period: "Jan 2023 – Present",
-    company: "FinTech Cloud",
-    roles: ["Senior Security Engineer", "Cloud Security Lead"],
-    duration: "1 yr 10 mos",
+    period: "Jan 2024 – Present",
+    company: "Eclectics International Ltd",
+    roles: ["Information Security Analyst", "Cloud Security Lead"],
+    duration: "2 yrs",
     responsibilities: [
-      "Secured AWS workloads across 50+ accounts",
-      "Built SIEM detections and threat models",
-      "Led red team simulations",
-      "Designed IAM least-privilege framework"
-    ]
+      "Conducted black-box and authenticated web application penetration tests uncovering critical access control and logic vulnerabilities",
+      "Performed dynamic and static security testing on iOS and Android applications",
+      "Executed internal network and server assessments to identify misconfigurations and lateral movement paths",
+      "Developed custom Frida instrumentation scripts to analyze and bypass mobile application protections",
+      "Designed and deployed intentionally vulnerable APIs and labs to simulate real-world attack scenarios",
+      "Led secure coding training sessions to improve developer awareness of application security risks"
+]
   },
   {
-    period: "Mar 2021 – Dec 2022",
-    company: "CyberSec Labs",
-    roles: ["Penetration Tester"],
+    period: "April 2022 – Dec 2023",
+    company: "Eclectics International Ltd",
+    roles: ["Junior Infomation Security Analyst"],
     duration: "1 yr 9 mos",
     responsibilities: [
-      "Web, API, and infrastructure exploitation",
-      "Red team tooling development",
-      "Client reporting and remediation guidance"
-    ]
-  },
-  {
-    period: "Jul 2019 – Feb 2021",
-    company: "SOC Operations",
-    roles: ["SOC Analyst", "Threat Hunter"],
-    duration: "1 yr 8 mos",
-    responsibilities: [
-      "Incident response and alert triage",
-      "Threat hunting across EDR and SIEM",
-      "Malware triage and IOC creation"
+      "Conducted wireless security assessments to detect rogue access points and misconfigured networks",
+      "Performed web application penetration testing",
+      "Performed network and server vulnerability assessments using automated and manual techniques",
+      "Executed mobile application security testing on iOS and Android platforms"
     ]
   }
 ];

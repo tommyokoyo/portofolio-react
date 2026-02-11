@@ -1,6 +1,6 @@
 export default function AboutHero() {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+    <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
       
       {/* Avatar */}
       <div className="flex justify-center md:justify-start">
@@ -15,7 +15,7 @@ export default function AboutHero() {
       </div>
 
       {/* Text */}
-      <div>
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white">
           Security Engineer
         </h1>
