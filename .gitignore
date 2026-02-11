@@ -25,4 +25,4 @@ dist-ssr
 
 # lock file
 package-lock.json
-yarn.lock
+# yarn.lock
