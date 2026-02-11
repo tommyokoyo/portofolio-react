@@ -85,7 +85,6 @@ export default function ProjectsGrid() {
 
           </div>
         </section>
-        <Footer />
       </div>
     </PageWrapper>
   )

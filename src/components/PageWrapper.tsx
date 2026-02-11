@@ -26,7 +26,7 @@ const PageWrapper = ({ children }: PageWrapperProps) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
         className="min-h-screen "
         >
             {children}

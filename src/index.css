@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
-  scrollbar-width: none;      /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari */
+  display: none;
 }
 
 .scrollbar-dark::-webkit-scrollbar {
@@ -20,7 +20,7 @@
 }
 
 .scrollbar-dark::-webkit-scrollbar-thumb {
-  background: #4b5563; /* Dark gray */
+  background: #4b5563; 
   border-radius: 4px;
 }
 

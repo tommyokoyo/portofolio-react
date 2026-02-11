@@ -38,8 +38,6 @@ export default function BlogGrid() {
     </section>
 
     {activeBlog && (<BlogReader contentPath={activeBlog.content} onClose={() => setActiveBlog(null)} />)}
-
-    <Footer />
     </PageWrapper>
   )
 }
