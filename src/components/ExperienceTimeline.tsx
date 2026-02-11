@@ -2,7 +2,7 @@ const experience = [
   {
     period: "Jan 2024 – Present",
     company: "Eclectics International Ltd",
-    roles: ["Information Security Analyst", "Cloud Security Lead"],
+    roles: ["Information Security Analyst"],
     duration: "2 yrs",
     responsibilities: [
       "Conducted black-box and authenticated web application penetration tests uncovering critical access control and logic vulnerabilities",
